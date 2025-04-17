@@ -33,10 +33,8 @@ if st.button("Calculate"):
                 else:
                     p_step = p_total ** (1 / n)
                     edited_df.at[i, "P-STEP (%)"] = round(p_step * 100, 3)
-        except Exception as e:
+        except:
             edited_df.at[i, "Cumulative P-TOTAL"] = "Err"
             edited_df.at[i, "P-STEP (%)"] = "Err"
 
-# Display results
-st.subheader("Updated Table")
-st.dataframe(edited_df)
+# No second table display here — only editable table above
