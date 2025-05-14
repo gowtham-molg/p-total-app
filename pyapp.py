@@ -3,7 +3,7 @@ from tkinter import ttk, messagebox
 
 DEFAULT_PSTEPS = [80, 85, 90, 95, 99, 99.5, 99.9, 99.95]
 
-def calculate_totals():
+def calculate_totals(): 
     try:
         n = float(entry_n.get())
     except ValueError:
