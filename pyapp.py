@@ -18,7 +18,8 @@ def calculate_totals():
             tree.set(row_id, column="ptotal", value=f"{p_total:.3f}")
         except ValueError:
             tree.set(row_id, column="ptotal", value="Invalid")
-
+ 
+ #hmmmmmm
 def edit_cell(event):
     region = tree.identify_region(event.x, event.y)
     if region != "cell":
